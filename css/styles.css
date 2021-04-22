@@ -1,0 +1,803 @@
+/*
+* --- NAVBAR -------------------------------------------------------------
+*/
+body{
+    scroll-behavior: smooth !important;
+    background-color: black !important;
+}
+nav{
+    top: 0;   
+}
+.navbar{
+    position: sticky !important;
+    display: flex;
+    z-index: 999;
+    border-bottom: 1px solid #e27021;
+    background-color: rgba(0,0,0,0.8);
+    transition: all 0.5s;
+}
+.navbar:hover{
+    background-color: rgba(0,0,0,1);
+}
+.nav-link{
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    font-size: 15px;
+}
+#nav-logo{
+    width: 55px;
+    height: auto;
+    margin-right: 10px;
+}
+
+
+/*
+* --- LOADER -------------------------------------------------------------
+*/
+#loader-text{
+    color: white;
+}
+#loader{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    background-color: black;
+}
+.loader-gif{
+    height: auto;
+    width: 20px;
+}
+/*
+* --- HEADER/ABOUT -------------------------------------------------------------
+*/
+#header-section{
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../media/Header_Wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid black;
+    background-position: center top;
+    background-attachment: fixed;
+    padding-top: 70px;
+    padding-bottom: 140px;
+}
+#header-h1{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    color: white;
+    text-shadow: 1px 3px 3px rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: Georgia, serif;
+}
+#header-title{
+    text-decoration: underline;
+    margin-bottom: 40px;
+    color: black;
+}
+#header-hr1{
+    margin-bottom: 50px;
+    width: 600px;
+}
+#header-textBox{
+    text-align: center;
+    position: relative;
+    background-color: rgba(255, 255, 255, 1);
+    margin-right: 250px;
+    margin-left: 250px;
+    margin-bottom: 150px;
+    padding: 32px;
+    color: #444;  
+}
+#header-quote{
+    position: relative;
+    margin-top:50px;
+    font-style: italic;
+    color: #444;
+}
+#header-quoteAuthor{
+   font-size: 10px;
+   color: #444
+}
+
+/*
+* --- NEWS -------------------------------------------------------------
+*/
+.newsDate{
+    font-family: geo-sans-light,sans-serif;
+    margin-bottom: 30px
+}
+#news:hover{
+    cursor: pointer;
+}
+.newsHeader{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Montserrat,sans-serif;
+}
+.newsText{
+    margin-bottom: 40px;
+    font-family: geo-sans-light,sans-serif;
+}
+.newsHr{
+    margin-bottom: 60px;
+    width: 50%;
+}
+
+/*
+* --- UNDERGRADUATE -------------------------------------------------------------
+*/
+#undergraduate-section{
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    border-top: 5px solid #59C173;
+    border-bottom: 5px solid #a17fe0;
+    background-image: 
+        linear-gradient(#59C173, #a17fe0),
+        linear-gradient(#59C173, #a17fe0)
+    ;
+    background-size: 5px 100%;
+    background-position:0 0, 100%, 0 ;
+    background-repeat:no-repeat;
+}
+#undergraduate-section .btn{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+#undergraduate-header{
+    text-align: center;
+    padding: 50px;
+    font-family: geo-sans-light;
+    margin-bottom: 50px;
+    color: #4e4654;
+}
+.degreeTitles{
+    font-size: 30px;
+    color: #4e4654;
+}
+.undergraduate-text{
+    font-family: Montserrat,sans-serif;
+    color: #4e4654;
+}
+.undergraduate-icons{
+    height: auto;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.concentrationsList{
+    list-style-type: none !important;
+    margin-bottom: 30px;
+    
+}
+.degree-header{
+    font-family: Garamond, serif;
+    margin-bottom: 20px;
+}
+.degree-header-wmc{
+    border-bottom: 1px solid #09ad66;
+    color: #09ad66;
+}
+.degree-header-hcc{
+    border-bottom: 1px solid #c2b313;
+    color: #c2b313;  
+}
+.degree-header-cit{
+    border-bottom: 1px solid #003cff;
+    color: #003cff;
+}
+.degree-btn{
+    border-radius: 50% !important;
+    padding: 12px !important;
+    font-family: 'Trebuchet MS', sans-serif !important;
+}
+
+/*
+* --- GRADUATE -------------------------------------------------------------
+*/
+#graduate-section{
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../media/Graduate_Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid black;
+    background-position: center top;
+    background-attachment: fixed;
+    color: white;
+    padding-bottom: 100px;
+}
+#graduate-header{
+    text-align: center;
+    padding: 100px;
+    font-family: geo-sans-light;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 1px 2px 3px rgb(0, 0, 0);
+}
+.degree-header-ist{
+    border-bottom: 1px solid #7303fc;
+    color: #7303fc;  
+}
+.degree-header-hci{
+    border-bottom: 1px solid #00d9a3;
+    color: #00d9a3;  
+}
+.degree-header-nsa{
+    border-bottom: 1px solid #d91d00;
+    color: #d91d00;  
+}
+.graduate-text{
+    font-family: Montserrat,sans-serif;
+    color: white;
+    text-shadow: 1px 2px 3px rgb(0, 0, 0);
+}
+.graduateTitles{
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 2px 3px rgb(0, 0, 0);
+}
+.certificate-icons{
+    height: auto;
+    width: 50px;
+    margin-bottom: 10px;
+}
+.certificate-header{
+    font-family: Montserrat,sans-serif;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.certificate-a{
+    color: #ebebeb;
+}
+.certificate-a:hover{
+    color: #4fffe2;
+}
+
+/*
+* --- MINORS -------------------------------------------------------------
+*/
+#minors-section{
+    text-align: center;
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    font-family: geo-sans-light,serif;
+    border-top: 4px solid #59C173;
+    border-bottom: 4px solid #a17fe0;
+}
+#minorsTitle{
+    margin-bottom: 50px;
+}
+#minors-header{
+    font-family: geo-sans-light,serif;
+}
+.minorDiv{
+    position: relative;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 60px;
+    font-size: 20px;
+    font-family: Montserrat,sans-serif;
+    transition: all 0.5s;
+    color: white;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+.minorDiv:hover{
+    cursor: pointer;
+    box-shadow: 17px 13px 8px -3px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 17px 13px 8px -3px rgba(0,0,0,0.67);
+    -moz-box-shadow: 17px 13px 8px -3px rgba(0,0,0,0.67);
+    color: black;
+    text-shadow: none;
+}
+#minor-0{
+    background-color: #FFD12A;
+}
+#minor-1{
+    background-color: 	#CEC8EF;
+}
+#minor-2{
+    background-color: #44D7A8;
+}
+#minor-3{
+    background-color: #DB91EF;
+}
+#minor-4{
+    background-color: #DA614E;
+}
+#minor-5{
+    background-color: 	#4F86F7;
+}
+#minor-6{
+    background-color: #FC5A8D;
+}
+#minor-7{
+    background-color: #9B7653;
+}
+
+/*
+* --- EMPLOYMENT/ EMPLOYMENT STATISTICS SECTION -------------------------------------------------------------
+*/
+#employmentStatistics-section{
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../media/Employment_Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    font-family: Montserrat,sans-serif;
+    padding: 3em 5em 150px;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+.employmentHr{
+    border-top: 1px solid white;
+    width: 150px; 
+    margin-bottom: 20px;
+}
+#statisticBoxesDiv{
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+.statisticBox{
+    padding: 36px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.employmentHeader{
+    margin-top: 50px;
+}
+#statisticBox-1{
+    background-color: #D64541;
+}
+#statisticBox-2{
+    background-color: #436CB9;
+}
+#statisticBox-3{
+    background-color: #14A989;
+}
+#statisticBox-4{
+    background-color: #64609A;
+}
+.statisticHeader{
+    font-family: geo-sans-light,serif;
+}
+.employmentText{
+    font-family: geo-sans-light,sans-serif;
+}
+#employersList{
+    text-align: center;
+    position: relative;
+}
+#careersList{
+    text-align: center;
+}
+.employersCareersEl{
+    text-align: center;
+    display: inline-block;
+    color: #14A989;
+}
+.employment-smallText{
+    font-size: 10px;
+    margin-top: 30px;
+}
+/*
+* --- MAP SECTION & coopTable + employmentTable -------------------------------------------------------------
+*/
+#map-section{
+    padding-top: 100px;
+    padding-bottom: 200px;
+    background-color: white;
+    border-top: 4px solid #59C173;
+    border-bottom: 4px solid #a17fe0;
+}
+#tables-header{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: geo-sans-light,sans-serif;
+}
+.tablesDiv{
+    padding: 80px;
+    list-style: none;
+    margin: 20px;
+    transition: all 0.5s;
+    color: white;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+.tablesDiv:hover{
+    cursor: pointer;
+    box-shadow: 17px 13px 8px -3px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 17px 13px 8px -3px rgba(0,0,0,0.67);
+    -moz-box-shadow: 17px 13px 8px -3px rgba(0,0,0,0.67);
+    color: black;
+    text-shadow: none;
+}
+#coopTable{
+    background-color: #ED0A3F;
+    border: 1px solid #D92121;
+}
+#employmentTable{
+    background-color: #00CC99;
+    border: 1px solid #01786F;
+}
+
+
+/*
+* --- RESEARCH BY INTEREST AREA -------------------------------------------------------------
+*/
+#interests-section{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../media/Interest_Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    text-shadow: 1px 2px 3px rgb(0, 0, 0);
+}
+.interest-headerText{
+    color: white;
+}
+#interestResearchList{
+    list-style: none;
+    padding-left: 100px;
+    margin-top: 50px;
+}
+.researchInterest-item{
+    position: relative;
+    z-index: 4;
+    color: white;
+    padding: 80px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.5s;
+}
+.interestItem-text{
+    font-size: 20px;
+}
+.researchInterest-item:hover{
+    cursor: pointer;
+    color: black;
+    text-shadow: none;
+    box-shadow: 17px 13px 8px -3px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 17px 13px 8px -3px rgba(0,0,0,0.67);
+    -moz-box-shadow: 17px 13px 8px -3px rgba(0,0,0,0.67);
+}
+#interestItem-0{
+    background-color: #FF355E;
+}
+#interestItem-0:hover{
+    color: black;
+    text-shadow: none;
+    box-shadow: 0px 1px 5px 12px rgba(255,53,94,0.75);
+    -webkit-box-shadow: 0px 1px 5px 12px rgba(255,53,94,0.75);
+    -moz-box-shadow: 0px 1px 5px 12px rgba(255,53,94,0.75);
+}
+#interestItem-1{
+    background-color: #50BFE6;
+}
+#interestItem-1:hover{
+    color: black;
+    text-shadow: none;
+    box-shadow: 0px 1px 5px 12px rgba(80,191,230,0.75);
+    -webkit-box-shadow: 0px 1px 5px 12px rgba(80,191,230,0.75);
+    -moz-box-shadow: 0px 1px 5px 12px rgba(80,191,230,0.75);
+}
+#interestItem-2{
+    background-color: #FFCC33;
+}
+#interestItem-2:hover{
+    color: black;
+    text-shadow: none;
+    box-shadow: 0px 1px 5px 12px rgba(255,204,51,0.75);
+    -webkit-box-shadow: 0px 1px 5px 12px rgba(255,204,51,0.75);
+    -moz-box-shadow: 0px 1px 5px 12px rgba(255,204,51,0.75); 
+}
+#interestItem-3{
+    background-color: #FF00CC;
+}
+#interestItem-3:hover{
+    color: black;
+    text-shadow: none;
+    box-shadow: 0px 1px 5px 12px rgba(255,0,204,0.75);
+    -webkit-box-shadow: 0px 1px 5px 12px rgba(255,0,204,0.75);
+    -moz-box-shadow: 0px 1px 5px 12px rgba(255,0,204,0.75);
+}
+#interestItem-4{
+    background-color: #87FF2A;
+}
+#interestItem-4:hover{
+    color: black;
+    text-shadow: none;
+    box-shadow: 0px 1px 5px 12px rgba(135,255,42,0.75);
+    -webkit-box-shadow: 0px 1px 5px 12px rgba(135,255,42,0.75);
+    -moz-box-shadow: 0px 1px 5px 12px rgba(135,255,42,0.75);
+}
+#interestItem-5{
+    background-color: #3F26BF;
+}
+#interestItem-5:hover{
+    color: black;
+    text-shadow: none;
+    box-shadow: 0px 1px 5px 12px rgba(63,38,191,0.75);
+    -webkit-box-shadow: 0px 1px 5px 12px rgba(63,38,191,0.75);
+    -moz-box-shadow: 0px 1px 5px 12px rgba(63,38,191,0.75);
+}
+#interestItem-6{
+    background-color: #665233;
+}
+#interestItem-6:hover{
+    color: black;
+    text-shadow: none;
+    box-shadow: 0px 1px 5px 12px rgba(102,82,51,0.75);
+    -webkit-box-shadow: 0px 1px 5px 12px rgba(102,82,51,0.75);
+    -moz-box-shadow: 0px 1px 5px 12px rgba(102,82,51,0.75);
+}
+#interestItem-7{
+    background-color: #00CC99;
+}
+#interestItem-7:hover{
+    color: black;
+    text-shadow: none;
+    box-shadow: 0px 1px 5px 12px rgba(0,204,153,0.75);
+    -webkit-box-shadow: 0px 1px 5px 12px rgba(0,204,153,0.75);
+    -moz-box-shadow: 0px 1px 5px 12px rgba(0,204,153,0.75);
+}
+#interestItem-8{
+    background-color:#E77200;
+}
+#interestItem-8:hover{
+    color: black;
+    text-shadow: none;
+    box-shadow: 0px 1px 5px 12px rgba(231,114,0,0.75);
+    -webkit-box-shadow: 0px 1px 5px 12px rgba(231,114,0,0.75);
+    -moz-box-shadow: 0px 1px 5px 12px rgba(231,114,0,0.75);
+}
+#interestItem-9{
+    background-color:#732E6C;
+}
+#interestItem-9:hover{
+    color: black;
+    text-shadow: none;
+    box-shadow: 0px 1px 5px 12px rgba(115,46,108,0.75);
+    -webkit-box-shadow: 0px 1px 5px 12px rgba(115,46,108,0.75);
+    -moz-box-shadow: 0px 1px 5px 12px rgba(115,46,108,0.75);
+}
+#interestItem-10{
+    background-color: #B33B24;
+}
+#interestItem-10:hover{
+    color: black;
+    text-shadow: none;
+    box-shadow: 0px 1px 5px 12px rgba(179,59,36,0.75);
+    -webkit-box-shadow: 0px 1px 5px 12px rgba(179,59,36,0.75);
+    -moz-box-shadow: 0px 1px 5px 12px rgba(179,59,36,0.75);
+}
+#interestItem-11{
+    background-color: #652DC1;
+}
+#interestItem-11:hover{
+    color: black;
+    text-shadow: none;
+    box-shadow: 0px 1px 5px 12px rgba(101,45,193,0.75);
+    -webkit-box-shadow: 0px 1px 5px 12px rgba(101,45,193,0.75);
+    -moz-box-shadow: 0px 1px 5px 12px rgba(101,45,193,0.75);
+}
+
+/*
+* --- FACULTY -------------------------------------------------------------
+*/
+#facultyResearch-section{
+    padding-top: 100px;
+    background-color: white;
+    border: 2px solid black;
+    border-top: 4px solid #59C173;
+    border-bottom: 4px solid #a17fe0;
+}
+#facultyList{
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../media/People_Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+.researcPublications-header{
+    color: #BB3385;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: Montserrat,sans-serif;
+}
+#staffList{
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../media/People_Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+.peopleDiv:hover{
+    cursor: pointer;
+}
+.peopleName{
+    color: white;
+    margin-top: 5px;
+}
+#staffList{
+}
+.peopleDialog-img{
+    margin-bottom: 30px;
+}
+.people-link{
+    color: #803790;
+}
+.people-link:hover{
+    color: #733380;
+}
+.citation{
+    margin-bottom: 40px;
+}
+
+
+/*
+* --- STUDENT RESOURCES / STUDENTS -------------------------------------------------------------
+*/
+#studentResources-section{
+    background-color: white;
+    padding-bottom: 200px;
+    padding-top: 100px;
+}
+#studentResources-header{
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+#resources-galleryView{
+   text-align: center;
+   position: relative;
+   overflow: hidden;
+}
+.galleryImg{
+    width: 550px;
+    height: auto;
+    transition: all 1s;
+}
+.galleryImg:hover{
+    width: 580px;
+    cursor: pointer;
+}
+.galleryLabel{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    font-family: Ubuntu;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.resources-dialog-text{
+    font-family: Montserrat,sans-serif;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.formsListing{
+    font-family: Montserrat,sans-serif;
+    margin-top: 20px;
+}
+.formsListing ul{
+    margin-bottom: 30px;
+}
+.studyAbroad-img{
+    width: 600px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+/*
+* --- FOOTER -------------------------------------------------------------
+*/
+footer{
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+    transition-timing-function: linear;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    margin-right: 0px !important;
+    border-top: 1px solid #e27021;
+}
+footer .col, .row{
+    text-align: center;
+}
+footer a{
+    color: orange;
+}
+footer h3{
+    margin-bottom: 20px;
+}
+footer a:hover{
+    text-decoration: none;
+    color: yellow;
+}
+.social-Icons{
+    height: auto;
+    width: 50px;
+}
+#socialIcons-container{
+    margin-top: 20px;
+}
+.useful-links-p{
+    line-height: 15px;
+}
+.useful-links-a{
+    border-bottom: 1px solid aliceblue;
+}
+
+/*
+* --- GENERAL -------------------------------------------------------------
+*/
+.justify-content{
+    text-align: justify;
+}
+.text-align-center{
+    text-align: center;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.orange-a{
+    color: orange;
+}
+.orange{
+    color: orange;
+}
+.orange-a:hover{
+    text-decoration: none;
+    color: yellow;
+}
+.row{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+.bold{
+    font-weight: bold;
+}
+.margin-top-50px{
+    margin-top: 50px;
+}
+
+/*
+* --------Media Quaries -------------------------------------------------------------
+*/
+@media only screen and (max-width: 900px) {
+    #header-textBox{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    #resources-galleryView{
+        margin-left: 0px;
+    }
+    #employmentStatistics-section{
+    padding: 3em 3em 150px;
+    }
+    .researchInterest-item{
+        padding: 36px;
+    }
+    .minorDiv{
+        margin: 5px;
+        padding: 30px;
+        font-size: 12px;
+    }
+}
